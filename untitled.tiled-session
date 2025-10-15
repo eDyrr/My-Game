@@ -1,0 +1,39 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "maps/test.tmx",
+    "expandedProjectPaths": [
+        "."
+    ],
+    "fileStates": {
+        "maps/test.tmx": {
+            "scale": 0.3701041666666667,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 1021.3340838727837,
+                "y": 651.1680270194203
+            }
+        },
+        "test-tiles.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        }
+    },
+    "last.exportedFilePath": "/var/home/ed/Projects/My-Game/maps",
+    "last.imagePath": "/var/home/ed/Downloads/Serene_Village_revamped_v1.9/SERENE_VILLAGE_REVAMPED",
+    "map.height": 30,
+    "map.lastUsedExportFilter": "All Files (*)",
+    "map.lastUsedFormat": "tmx",
+    "openFiles": [
+        "maps/test.tmx",
+        "test-tiles.tsx"
+    ],
+    "project": "untitled.tiled-project",
+    "recentFiles": [
+        "test-tiles.tsx",
+        "maps/test.tmx"
+    ],
+    "tileset.lastUsedFormat": "tsx"
+}
