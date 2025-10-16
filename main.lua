@@ -12,6 +12,9 @@ local scenes = {
 currentScene = scenes.menu
 
 function love.load()
+    camera = require 'libraries/camera'
+    cam = camera()
+
     currentScene:load()
 end
 
@@ -22,9 +25,11 @@ function love.update(dt)
 end
 
 function love.draw()
-    if currentScene and currentScene.draw then
-        currentScene:draw()
-    end
+    cam:attach()
+        if currentScene and currentScene.draw then
+            currentScene:draw()
+        end
+    cam:detach()
 end
 
 function love.mousepressed(x, y, button)

@@ -64,11 +64,26 @@ function game:update(dt)
     end
 
     player.anim:update(dt)
+    cam:lookAt(player.x, player.y)
+    
+    local windowWith = love.graphics.getWidth()
+    local windowHeight = love.graphics.getHeight()
+
+    if cam.x < windowWith/2 then
+        cam.x = windowWith/2
+    end
+
+    if cam.y < windowHeight/2 then
+        cam.y = windowHeight/2
+    end
+
+    -- local mapWidth = 
+    -- local mapHeight =
 end
 
 function game:draw()
     -- Draw the player
-    player.anim:draw(player.spriteSheet, player.x, player.y, 0, 10)
+    player.anim:draw(player.spriteSheet, player.x, player.y, nil, 6, nil, 6, 9)
     
     -- Add some debug text to verify we're in the game scene
     love.graphics.setColor(1, 1, 1, 1)
